@@ -3,6 +3,10 @@ body {
     margin: 0px;
 }
 
+header {
+    text-align: center;
+}
+
 header ul {
     display: flex;
     list-style: none;
@@ -40,4 +44,7 @@ header ul li a {
 
 footer {
     text-align: center;
+    background-color: rgb(35, 35, 35);
+    padding: 10px 10px;
+    color: white;
 }
