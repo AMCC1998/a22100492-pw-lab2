@@ -42,6 +42,30 @@ header ul li a {
     object-fit: cover;
 }
 
+.area-quizz ol li.wrapper-questao {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.area-quizz ol li:first-child {
+    margin-top: 0rem;
+}
+
+.area-quizz label {
+    font-weight: 600;
+
+}
+
+.area-quizz ol li label:first-child {
+    display: block;
+}
+
+.text-align-left {
+    text-align: left;
+
+}
+
+
 footer {
     text-align: center;
     background-color: rgb(35, 35, 35);
