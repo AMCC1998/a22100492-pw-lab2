@@ -9,7 +9,7 @@
     <meta name="description"
         content="Tudo sobre Dublin - Esta página tem como objectivo testar se o utilizador conhece bem a cidade de Dublin.">
     <meta name="keywords" content="Dublin">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +35,9 @@
                 </li>
                 <li>
                     <a href="quizz.html"><b>Quizz</b></a>
+                </li>
+                <li>
+                    <a href="html5-css.html">HTML5 e CSS</a>
                 </li>
             </ul>
         </nav>
@@ -68,9 +71,9 @@
                             <li class="wrapper-questao">
                                 <label>Qual é o rio que atravessa Dublin?</label>
                                 <ul style="list-style: lower-alpha;">
-                                    <li><input type="radio" name="q2" value="a"> <label>Shannon</label></li>
-                                    <li><input type="radio" name="q2" value="b"> <label>Liffey</label></li>
-                                    <li><input type="radio" name="q2" value="c" size="40"> <label>Boyne</label></li>
+                                    <li><input type="radio" name="rio-dublin" value="a"> <label>Shannon</label></li>
+                                    <li><input type="radio" name="rio-dublin" value="b"> <label>Liffey</label></li>
+                                    <li><input type="radio" name="rio-dublin" value="c" size="40"> <label>Boyne</label></li>
                                 </ul>
                             </li>
 
@@ -122,7 +125,7 @@
 
                             <li class="wrapper-questao">
                                 <label>Quantos metros tem a ponte da questão anterior?</label>
-                                <input type="number" min="1" max="500" id="comprimento-ponte" size="4"> m
+                                <input type="number" min="1" max="500" id="comprimento-ponte" name="comprimento-ponte" size="4"> m
                             </li>
                             <li class="wrapper-questao">
                                 <label>Numa escala de 1 a 10, quão provavel seria visitar Dublin?</label>
@@ -130,7 +133,7 @@
                             </li>
                             <li class="wrapper-questao">
                                 <label>O que achou deste Quizz?</label><br>
-                                <textarea rows="5" style="width: 80%;"></textarea>
+                                <textarea rows="5" style="width: 80%;" name="opiniao"></textarea>
                             </li>
                         </ol>
                         <button type="submit">Enviar Respostas</button>
