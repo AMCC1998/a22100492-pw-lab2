@@ -180,6 +180,13 @@ form button:hover {
     border: rgb(135, 88, 0);
 }
 
+form input {
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 footer {
     text-align: center;
     background-color: rgb(35, 35, 35);
