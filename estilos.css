@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+    background-color: rgba(207, 207, 207, 0.249);
 }
 
 *::selection {
@@ -27,6 +28,18 @@ header ul li>a {
     margin-right: 10px;
     color: white;
     text-decoration: none;
+    position: relative;
+}
+
+header ul li>a:hover:after {
+    content: "";
+    height: 1px;
+    background-color: orange;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .main-container {
@@ -42,10 +55,18 @@ header ul li>a {
     grid-gap: 16px;
 }
 
-.wrapper-galeria img {
+.wrapper-galeria:not(.wrapper-galeria--no-resize) img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.poema p::first-line {
+    font-weight: bold;
+}
+
+.default-margin-top {
+    margin-top: 3rem;
 }
 
 .area-quizz ol li.wrapper-questao {
@@ -121,12 +142,13 @@ a:visited {
     color: rgb(109, 109, 109);
 }
 
-a:active {
+a:active,
+a:hover {
     font-weight: bold;
 }
 
 :target {
-    color: rgb(255, 47, 47);
+    color: orange;
 }
 
 header a:visited {
@@ -140,6 +162,17 @@ form button {
     transition: all ease-in-out 0.2s;
     border: orange;
     font-weight: bold;
+}
+
+.display-block {
+    display: block;
+}
+
+img,
+video,
+iframe {
+    border: 2px solid orange;
+    border-radius: 10px;
 }
 
 form button:hover {

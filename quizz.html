@@ -22,22 +22,22 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Introdução</a>
+                    <a href="index.html">🌏 Introdução</a>
                 </li>
                 <li>
-                    <a href="local.html">Local</a>
+                    <a href="local.html">🗺️ Local</a>
                 </li>
                 <li>
-                    <a href="multimedia.html">Multimedia</a>
+                    <a href="multimedia.html">📷 Multimedia</a>
                 </li>
                 <li>
-                    <a href="info.html">Informação</a>
+                    <a href="info.html">🪪 Informação</a>
                 </li>
                 <li>
-                    <a href="quizz.html"><b>Quizz</b></a>
+                    <a href="quizz.html">🧪 <b>Quizz</b></a>
                 </li>
                 <li>
-                    <a href="html5-css.html">HTML5 e CSS</a>
+                    <a href="html5-css.html">👌 HTML5 e CSS</a>
                 </li>
             </ul>
         </nav>
@@ -55,13 +55,14 @@
                     <legend>Quizz sobre Dublin</legend>
                     <fieldset class="text-align-left">
                         <legend>Informações Pessoais</legend>
-                        <label for="nome">Nome </label>
-                        <input type="text" id="nome" placeholder="Nome" required size="50" autocomplete autofocus
-                            pattern="[A-Za-zÀ-ú]+">
-                        <label for="apelido">Apelido </label>
-                        <input type="text" id="apelido" placeholder="Apelido" required size="50" autocomplete
-                            pattern="[A-Za-zÀ-ú]+">
-                        <br>
+                        <div class="display-block">
+                            <label for="nome">Nome </label>
+                            <input type="text" id="nome" placeholder="Nome" required size="50" autocomplete autofocus
+                                pattern="[A-Za-zÀ-ú]+">
+                            <label for="apelido">Apelido </label>
+                            <input type="text" id="apelido" placeholder="Apelido" required size="50" autocomplete
+                                pattern="[A-Za-zÀ-ú]+">
+                        </div>
                         <label for="email">Email </label>
                         <input type="email" id="email" placeholder="Email" required autocomplete size="50">
                     </fieldset>
@@ -73,7 +74,8 @@
                                 <ul style="list-style: lower-alpha;">
                                     <li><input type="radio" name="rio-dublin" value="a"> <label>Shannon</label></li>
                                     <li><input type="radio" name="rio-dublin" value="b"> <label>Liffey</label></li>
-                                    <li><input type="radio" name="rio-dublin" value="c" size="40"> <label>Boyne</label></li>
+                                    <li><input type="radio" name="rio-dublin" value="c" size="40"> <label>Boyne</label>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -112,7 +114,7 @@
                             <li class="wrapper-questao">
                                 <label>Qual o nome da ponte que está na imagem?</label>
                                 <img src="images/img_1.jpeg" loading="lazy" alt="Ponte Dublin" width="300" height="149"
-                                    aria-placeholder="Nome da Ponte"><br>
+                                    aria-placeholder="Nome da Ponte">
                                 <input list="nome-ponte" id="nome-ponte-input" name="nome-ponte-input">
                                 <datalist id="nome-ponte">
                                     <option value="Harpa - Samuel Beckett Bridge">
@@ -125,14 +127,15 @@
 
                             <li class="wrapper-questao">
                                 <label>Quantos metros tem a ponte da questão anterior?</label>
-                                <input type="number" min="1" max="500" id="comprimento-ponte" name="comprimento-ponte" size="4"> m
+                                <input type="number" min="1" max="500" id="comprimento-ponte" name="comprimento-ponte"
+                                    size="4"> m
                             </li>
                             <li class="wrapper-questao">
                                 <label>Numa escala de 1 a 10, quão provavel seria visitar Dublin?</label>
                                 <input type="range" name="visitar-dublin" min="1" max="10">
                             </li>
                             <li class="wrapper-questao">
-                                <label>O que achou deste Quizz?</label><br>
+                                <label class="display-block">O que achou deste Quizz?</label>
                                 <textarea rows="5" style="width: 80%;" name="opiniao"></textarea>
                             </li>
                         </ol>
@@ -144,6 +147,6 @@
     </main>
 </body>
 
-<footer>André Carvalho</footer>
+<footer>André Carvalho / a22100492 / ULHT Universidade Lusófona de Humanidades e Tecnologias / 2023</footer>
 
 </html>
